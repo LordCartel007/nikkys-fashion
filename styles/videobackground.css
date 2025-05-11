@@ -1,0 +1,116 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  touch-action: none;
+}
+
+.containervideo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.background-clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+
+/* Add a separate overlay */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); Adjust the darkness */
+/* z-index: 0;
+} */
+
+/* Content should be above the overlay */
+/* .content {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh; /* ✅ Fix viewport issue on mobile */
+  touch-action: auto; /* ✅ Fix scrolling issue */
+  overflow-x: hidden; /* ✅ Prevent unwanted horizontal scrolling */
+}
+
+.containervideo {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh; /* ✅ Use min-height instead of height */
+
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
+.background-clip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* ✅ Allows touch events to pass through */
+}
+
+/* Add a separate overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust the darkness */
+  z-index: 0;
+}
+
+/* Content should be above the overlay */
+.content {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+}
