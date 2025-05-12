@@ -19,10 +19,16 @@ const StyledIframe = styled.iframe`
 
 const StyledDiv = styled.div`
   height: 50vh;
+  @media screen and (max-width: 767px) {
+    height: 30vh;
+  }
 `;
 
 const StyledVideo = styled.video`
   height: 50vh;
+  @media screen and (max-width: 767px) {
+    height: 30vh;
+  }
 `;
 
 const Title = styled.h1`
