@@ -82,6 +82,7 @@ export default function HomePage({ featuredProduct, newProducts }) {
       </StyledDiv>
       <div className="containervideo">
         <video autoPlay loop muted playsInline className="background-clip">
+          {/* background video*/}
           <source
             src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/nikky+video+2.mp4"
             type="video/mp4"
