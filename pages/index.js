@@ -18,9 +18,44 @@ const StyledIframe = styled.iframe`
 `;
 
 const StyledDiv = styled.div`
+  height: 50vh;
+`;
+
+const StyledVideo = styled.video`
+  height: 50vh;
+`;
+
+const Title = styled.h1`
+  font-weight: bolder;
+
+  margin: 0;
+  color: #ffc107;
+  text-decoration: none;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex: 1; /* Makes title fill available space */
+  justify-content: center;
+
   @media screen and (max-width: 767px) {
-    display: none;
+    font-size: 2rem;
   }
+
+  @media screen and (min-width: 767px) {
+    font-size: 3rem;
+  }
+
+  /* nest hub tv screen */
+  @media screen and (min-width: 1023px) {
+    font-size: 4rem;
+  }
+`;
+
+const StyledTitleDiv = styled.div`
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 `;
 
 export default function HomePage({ featuredProduct, newProducts }) {
@@ -28,24 +63,27 @@ export default function HomePage({ featuredProduct, newProducts }) {
     <>
       {" "}
       <Header />
-      <StyledDiv className="containervideo">
-        <StyledIframe
-          className="carousel"
-          src="https://3d-carousel-autocartel.vercel.app/"
-        />
-
-        <video autoPlay loop muted playsInline className="background-clip">
+      <StyledDiv className="containervideotwo">
+        <StyledVideo
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="background-clip"
+        >
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/Aventador.mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/nikky+video+1.mp4"
             type="video/mp4"
           />
-        </video>
-        <div className="content"></div>
+        </StyledVideo>
+        <StyledTitleDiv className=" ">
+          <Title> Welcome To Nikkys Fashion </Title>
+        </StyledTitleDiv>
       </StyledDiv>
       <div className="containervideo">
         <video autoPlay loop muted playsInline className="background-clip">
           <source
-            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/Redlamborgini.Mp4.mp4"
+            src="https://cartel-next-ecommerce.s3.eu-north-1.amazonaws.com/nikky+video+2.mp4"
             type="video/mp4"
           />
         </video>

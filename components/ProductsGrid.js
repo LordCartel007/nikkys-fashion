@@ -35,13 +35,13 @@ const StyledProductsGrid = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1020px) {
     /* Styles for tablets */
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
   }
 
   @media screen and (min-width: 1021px) {
     /* large screen */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
   }
 `;
 

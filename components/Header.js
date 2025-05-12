@@ -105,7 +105,7 @@ export default function Header() {
     <StyledHeader>
       <Center>
         <Wrapper>
-          <Logo href={"/"}>Auto-Cartel</Logo>
+          <Logo href={"/"}>Nikkys Fashion</Logo>
           <NavOverlay
             $mobileNavActive={mobileNavActive}
             onClick={() => setMobileNavActive(false)}

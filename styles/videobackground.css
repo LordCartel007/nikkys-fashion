@@ -78,6 +78,15 @@ body {
   margin-bottom: 0%;
 }
 
+.containervideotwo {
+  position: relative;
+  width: 100vw;
+
+  max-height: 50vh;
+  overflow: hidden;
+  margin-bottom: 0%;
+}
+
 .background-clip {
   position: absolute;
   top: 50%;
