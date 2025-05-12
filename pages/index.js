@@ -98,6 +98,7 @@ export default function HomePage({ featuredProduct, newProducts }) {
   );
 }
 
+//this function is called on the server side
 export async function getServerSideProps() {
   const featuredProductId = null;
   await mongooseConnect();
