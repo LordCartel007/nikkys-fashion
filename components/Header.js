@@ -128,7 +128,7 @@ export default function Header() {
               Contact Us
             </NavLink>
             {/* Link to chat web app */}
-            <ExternalLink href="https://chatcartel.autocartel.shop">
+            <ExternalLink href="https://chat.autocartel.shop/">
               Message Us
             </ExternalLink>
             <NavLink href={"/cart"} onClick={() => setMobileNavActive(false)}>

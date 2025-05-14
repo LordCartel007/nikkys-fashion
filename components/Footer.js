@@ -48,7 +48,7 @@ export default function Footer() {
         <FooterNav>
           <FooterLink href="/">Home</FooterLink>
           <FooterLink href="/products">All Products</FooterLink>
-          <FooterLink href="https://chatcartel.autocartel.shop">
+          <FooterLink href="https://chat.autocartel.shop/">
             Message Us
           </FooterLink>
           <FooterLink href="/cart">Cart</FooterLink>
