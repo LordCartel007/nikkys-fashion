@@ -72,7 +72,7 @@ export default function ContactPage() {
           <ContactTitle>Contact Us</ContactTitle>
           <ContactItem>
             📞 Call Us:{" "}
-            <PhoneLink href="tel:+2347033127669">+2347033127669</PhoneLink>
+            <PhoneLink href="tel:+2347033127669">+2349039195457</PhoneLink>
           </ContactItem>
           <ContactItem>
             <WhatsAppLink href="https://wa.link/c9mv6b" target="_blank">
