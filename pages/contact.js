@@ -85,6 +85,9 @@ export default function ContactPage() {
               <FaFacebook size={24} /> Our facebook page
             </FacebookLink>
           </ContactItem>
+          <ContactItem>
+            Our boutique store is located at 23 festac road Lagos
+          </ContactItem>
         </Center>
       </ContactWrapper>
     </>
